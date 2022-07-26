@@ -1,5 +1,51 @@
 # High_Throughput_Component_Labeling_Engine
 
+##Table of contents
+
+<!--ts-->
+   * [Introduction to this project](#introduction-to-this-project)
+   * [Files in this repository](#files-in-this-repository)
+   * [Statement of the problem](#statement-of-the-problem)
+      * [Block diagram](#block-diagram)
+      * [Specifications](#specifications)
+      * [More details about the problem](#more-details-about-the-problem)
+      * [Memories for design](#memories-for-design)
+   * [Implementation](#implementation)
+      * [The software algorithm this project refers to](#the-software-algorithm-this-project-refers-to)
+      * [Overview of the CLE](#overview-of-the-cle)
+      * [Mask for the first scan](#mask-for-the-first-scan)
+      * [Labeling and transition in the nine configurations](#labeling-and-transition-in-the-nine-configurations)
+         * [*C<sub>a</sub>*](#*c<sub>a</sub>*)
+            * [Labeling](#labeling)
+            * [Transition](#transition)
+         * [*C<sub>b</sub>*](#*c<sub>b</sub>*)
+            * [Labeling](#labeling)
+            * [Transition](#transition)
+         * [*C<sub>c</sub>*](#*c<sub>c</sub>*)
+            * [Labeling](#labeling)
+            * [Transition](#transition)
+         * [*C<sub>d</sub>*](#*c<sub>d</sub>*)
+            * [Labeling](#labeling)
+            * [Transition](#transition)
+         * [*C<sub>e</sub>*](#*c<sub>e</sub>*)
+            * [Labeling](#labeling)
+            * [Transition](#transition)
+         * [*C<sub>f</sub>*](#*c<sub>f</sub>*)
+            * [Labeling](#labeling)
+            * [Transition](#transition)
+         * [*C<sub>g</sub>*](#*c<sub>g</sub>*)
+            * [Labeling](#labeling)
+            * [Transition](#transition)
+         * [*C<sub>h</sub>*](#*c<sub>h</sub>*)
+            * [Labeling](#labeling)
+            * [Transition](#transition)
+         * [*C<sub>i</sub>*](#*c<sub>i</sub>*)
+            * [Labeling](#labeling)
+            * [Transition](#transition)
+      * [Merging different labels](#merging-different-labels)
+   * [Reference](#reference)
+<!--te-->
+
 
 ## Introduction to this project
    This is the final project of Computer-aided VLSI System Design. I designed a Component Labeling Engine (CLE), which can detect object segmentation from the binary image, and give the same ID number to the same object. This design ranked 4th out of 53 graduate student teams. The performance is evaluated with $$Area \times Time^2.$$
