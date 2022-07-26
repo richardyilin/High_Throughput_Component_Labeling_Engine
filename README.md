@@ -21,7 +21,9 @@
 ###
    1. The input image is a 32x32 binary image as shown in Fig. 1.
 
-   ![](./figure/binary_image.PNG "Binary Image")
+   | ![](./figure/binary_image.PNG) |
+   |:--:|
+   | *image_caption* |
 
    2. For the binary signal, 0 represents the background, and 1 represents the object for each pixel. We have to check if those pixels with value 1 are connected or not. The connected pixels represent to the same object. Those pixels are given with the same label ID from the same object. The number of label ID can be created by ourselves.
    3. The image is already stored in the 128x8 ROM. The storing order is shown in Fig.3. For example, if the address value is “0”, the corresponding 8-bit binary data represents the pixels [X=00, Y=00-07] in Fig.2. The MSB is related to [X=00, Y=00], and the LSB is related to [X=00, Y=07]. The number of times to read data from ROM is not constrained, and the signal CEN from ROM is always set to 0.
