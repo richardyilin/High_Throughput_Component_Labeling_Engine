@@ -42,7 +42,7 @@
 
 ## Files in this repository
 
-   The code of CLE is [CLE.v](./src/CLE.v). Although I implemented CLE from its frontend RTL codes and gate-level to the backend of place and route in this project, the non-disclosure agreement forbids me from revealing anything about the cell library. As a result, only RTL codes is included in this repository.
+   The code of CLE is [CLE.v](./src/CLE.v). Although I implemented CLE from its frontend RTL code and gate-level to the backend of place and route in this project, the non-disclosure agreement forbids me from revealing anything about the cell library. As a result, only the RTL code is included in this repository.
 
 ## Statement of the problem
 
@@ -62,7 +62,7 @@
    | Fig. 3. Specifications |
 
 ### More details about the problem
-   1. The input image is a 32x32 binary image as shown in Fig. 4. For the binary signal, 0 represents the background, and 1 represents the object for each pixel. We have to check if those pixels with value 1 are connected or not. The connected pixels represent to the same object. Those pixels are given with the same label ID from the same object. The number of label IDs can be created by ourselves.
+   1. The input image is a 32x32 binary image as shown in Fig. 4. For the binary signal, 0 represents the background pixel, and 1 represents the foreground pixel. We have to check if those foreground pixels are connected or not. Connected foreground pixels must be given the same label ID. The number of label IDs can be created by ourselves.
 
    | ![](./figure/binary_image.PNG) |
    |:--:|
@@ -117,11 +117,11 @@
 
 ### Overview of the CLE
 
-   This CLE performs two scans. In the first scan, we label pixels from top to down, from left to right (unlike the software algorithm in the paper scans from left to right, from top to down). This is because we can read two pixels in the same row from the 128x8 ROM in the same cycle. The background pixels are always assigned with 0. For foreground pixels, we not only assign a label to each pixel but also assign a representative to each label. For the labels having the same representative, pixels with these labels belong to the same connected component. Therefore, when we find out that two labels turn out to belong to the same connected component during the scan, we just assign the representative of one label to the representative of the other label. We write the label of each pixel to two 512x8 SRAMs. Additionally, we maintain a register file called *merge_table* to store each representative. The final label of each pixel is the representative of the label of the pixel (instead of the label of the pixel). Therefore, in the second scan, we read the label of the pixel from one of the 512x8 SRAMs, looking up its representative in *merge_table*, and writing the representative of the label of the pixel to 1024x8 SRAM.
+   This CLE performs two scans. In the first scan, we label pixels from top to down, from left to right (unlike the software algorithm in the paper that scans from left to right, from top to down). This is because we can read two pixels in the same row from the 128x8 ROM in the same cycle. The background pixels are always assigned with 0. For foreground pixels, we not only assign a label to each pixel but also assign a representative to each label. For the labels having the same representative, pixels with these labels belong to the same connected component. Therefore, when we find out that two labels turn out to belong to the same connected component during the scan, we just assign the representative of one label to the representative of the other label. We write the label of each pixel to two 512x8 SRAMs. Additionally, we maintain a register file called *merge_table* to store each representative. The final label of each pixel is the representative of the label of the pixel (instead of the label of the pixel). Therefore, in the second scan, we read the label of the pixel from one of the 512x8 SRAMs, looking up its representative in *merge_table*, and writing the representative of the label of the pixel to 1024x8 SRAM.
 
 ### Mask for the first scan
 
-   The CLE uses the mask as shown in Fig. 10. Pixel *n<sub>1</sub>*, *n<sub>2</sub>*, *n<sub>3</sub>*, *n<sub>4</sub>*, and *n<sub>5</sub>* have been assigned with their labels, while pixel *a* and pixel *b* are the pixel we are processing. There are four cases for a pixel in the masks. A background pixel is in white. A meaningless pixel is in light gray. Whether a meaningless is a foreground pixel does not affect the processing result. A pixel that is either a foreground pixel or a background pixel is in dark gray. A foreground pixel is in black.
+   The CLE uses the mask as shown in Fig. 10. Pixel *n<sub>1</sub>*, *n<sub>2</sub>*, *n<sub>3</sub>*, *n<sub>4</sub>*, and *n<sub>5</sub>* have been assigned with their labels, while pixel *a* and pixel *b* are the pixels we are processing. There are four cases for a pixel in the masks. A background pixel is denoted by a white square. A meaningless pixel is denoted by a light gray square. Whether a meaningless pixel is a foreground pixel does not affect the processing result. A pixel that is either a foreground pixel or a background pixel is denoted by a dark gray square. A foreground pixel is denoted by a black square.
 
 
 
