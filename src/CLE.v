@@ -9,13 +9,13 @@ output  [7:0]  sram_d;
 output         sram_wen;
 output         finish;
 
-parameter INIT=0;
-parameter FIRST = 1;
-parameter MERGE = 2;
+parameter INIT    = 0;
+parameter FIRST   = 1;
+parameter MERGE   = 2;
 parameter SECOND1 = 3;
-parameter MERGE1 = 4;
-parameter MERGE2 = 5;
-parameter MERGE3 = 6;
+parameter MERGE1  = 4;
+parameter MERGE2  = 5;
+parameter MERGE3  = 6;
 parameter SECOND2 = 7;
 
 parameter CA = 0;
