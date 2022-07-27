@@ -138,10 +138,14 @@
 
 ##### Labeling
 
+   1. 
+
    ![](./figure/ca_label.PNG)
 
 
 ##### Transition
+
+   1. 
 
    ![](./figure/ca_transition.PNG)
 
@@ -149,25 +153,54 @@
 
 ##### Labeling
 
+   1. 
+
    ![](./figure/cb_label.PNG)
+
+   2. 
+
    ![](./figure/cb_label2.PNG)
+
+   3. 
+
    ![](./figure/cb_label3.PNG)
+
+   4. 
+
    ![](./figure/cb_label4.PNG)
+
+   5. 
+
    ![](./figure/cb_label5.PNG)
 
 ##### Transition
 
+   1. 
+
+
    ![](./figure/cb_transition.PNG)
+
+   2. 
+
    ![](./figure/cb_transition2.PNG)
+
+   3. 
+
    ![](./figure/cb_transition3.PNG)
 
 #### *C<sub>c</sub>*
 
 ##### Labeling
 
+   1. 
+
+
    ![](./figure/cc_label.PNG)
 
 ##### Transition
+
+   1. 
+
 
    ![](./figure/cc_transition.PNG)
 
@@ -175,23 +208,47 @@
 
 ##### Labeling
 
+   1. 
+
+
    ![](./figure/cd_label.PNG)
+
+   2. 
+
    ![](./figure/cd_label2.PNG)
+
+   3. 
+
    ![](./figure/cd_label3.PNG)
 
 ##### Transition
 
+   1. 
+
+
    ![](./figure/cd_transition.PNG)
+
+   2. 
+
    ![](./figure/cd_transition2.PNG)
+
+   3. 
+
    ![](./figure/cd_transition3.PNG)
 
 #### *C<sub>e</sub>*
 
 ##### Labeling
 
+   1. 
+
+
    ![](./figure/ce_label.PNG)
 
 ##### Transition
+
+   1. 
+
 
    ![](./figure/ce_transition.PNG)
 
@@ -199,21 +256,39 @@
 
 ##### Labeling
 
+   1. 
+
+
    ![](./figure/cf_label.PNG)
+
+   2. 
+
    ![](./figure/cf_label2.PNG)
 
 ##### Transition
 
+   1. 
+
+
    ![](./figure/cf_transition.PNG)
+
+   2. 
+
    ![](./figure/cf_transition2.PNG)
 
 #### *C<sub>g</sub>*
 
 ##### Labeling
 
+   1. 
+
+
    ![](./figure/cg_label.PNG)
 
 ##### Transition
+
+   1. 
+
 
    ![](./figure/cg_transition.PNG)
 
@@ -221,16 +296,40 @@
 
 ##### Labeling
 
+   1. 
+
+
    ![](./figure/ch_label.PNG)
+
+   2. 
+
    ![](./figure/ch_label2.PNG)
+
+   3. 
+
    ![](./figure/ch_label3.PNG)
+
+   4. 
+
    ![](./figure/ch_label4.PNG)
+
+   5. 
+
    ![](./figure/ch_label5.PNG)
 
 ##### Transition
 
+   1. 
+
+
    ![](./figure/ch_transition.PNG)
+
+   2. 
+
    ![](./figure/ch_transition2.PNG)
+
+   3. 
+
    ![](./figure/ch_transition3.PNG)
 
 
@@ -238,9 +337,15 @@
 
 ##### Labeling
 
+   1. 
+
+
    ![](./figure/ci_label.PNG)
 
 ##### Transition
+
+   1. 
+
 
    ![](./figure/ci_transition.PNG)
 
