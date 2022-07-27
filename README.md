@@ -1,6 +1,6 @@
 # High_Throughput_Component_Labeling_Engine
 
-##Table of contents
+## Table of contents
 
 <!--ts-->
    * [Introduction to this project](#introduction-to-this-project)
@@ -15,36 +15,22 @@
       * [Overview of the CLE](#overview-of-the-cle)
       * [Mask for the first scan](#mask-for-the-first-scan)
       * [Labeling and transition in the nine configurations](#labeling-and-transition-in-the-nine-configurations)
-         * [*C<sub>a</sub>*](#*c<sub>a</sub>*)
-            * [Labeling](#labeling)
-            * [Transition](#transition)
-         * [*C<sub>b</sub>*](#*c<sub>b</sub>*)
-            * [Labeling](#labeling)
-            * [Transition](#transition)
-         * [*C<sub>c</sub>*](#*c<sub>c</sub>*)
-            * [Labeling](#labeling)
-            * [Transition](#transition)
-         * [*C<sub>d</sub>*](#*c<sub>d</sub>*)
-            * [Labeling](#labeling)
-            * [Transition](#transition)
-         * [*C<sub>e</sub>*](#*c<sub>e</sub>*)
-            * [Labeling](#labeling)
-            * [Transition](#transition)
-         * [*C<sub>f</sub>*](#*c<sub>f</sub>*)
-            * [Labeling](#labeling)
-            * [Transition](#transition)
-         * [*C<sub>g</sub>*](#*c<sub>g</sub>*)
-            * [Labeling](#labeling)
-            * [Transition](#transition)
-         * [*C<sub>h</sub>*](#*c<sub>h</sub>*)
-            * [Labeling](#labeling)
-            * [Transition](#transition)
-         * [*C<sub>i</sub>*](#*c<sub>i</sub>*)
-            * [Labeling](#labeling)
-            * [Transition](#transition)
+         * [*C<sub>a</sub>*](#ca)
+         * [*C<sub>b</sub>*](#cb)
+         * [*C<sub>c</sub>*](#cc)
+         * [*C<sub>d</sub>*](#cd)
+         * [*C<sub>e</sub>*](#ce)
+         * [*C<sub>f</sub>*](#cf)
+         * [*C<sub>g</sub>*](#cg)
+         * [*C<sub>h</sub>*](#ch)
+         * [*C<sub>i</sub>*](#ci)
       * [Merging different labels](#merging-different-labels)
    * [Reference](#reference)
 <!--te-->
+
+
+
+
 
 
 ## Introduction to this project
