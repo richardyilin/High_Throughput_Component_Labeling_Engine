@@ -55,7 +55,7 @@
 
 ### Specifications
 
-   2. The description of the inputs and the outputs is shown below:
+   The description of the inputs and the outputs is shown below:
 
    | ![](./figure/specifications.PNG) |
    |:--:|
@@ -352,7 +352,7 @@
 ### Merging different labels
 
    1. When we are scanning, we may find out that two pixels that were assigned with different labels actually belong to the same connected component. In this case, we need to merge these labels.
-   2. We merge different labels by assigning the representative of one of the labels to the representative of the other label. To achieve it, we maintain a register file called *merge_table*. Suppose that the labels we are merging are *l<sub>a</sub>* and *l<sub>b</sub>*, and their representatives are *r<sub>a</sub>* and *r<sub>b</sub>* respectively. We write $$merge_table[l_a] = r_b.$$ Thus, the representative of *l<sub>a</sub>* is *r<sub>b</sub>* now.It also works if we update *r<sub>a</sub>* to be *r<sub>b</sub>*.
+   2. We merge different labels by assigning the representative of one of the labels to the representative of the other label. To achieve it, we maintain a register file called *merge_table*. Suppose that the labels we are merging are *l<sub>a</sub>* and *l<sub>b</sub>*, and their representatives are *r<sub>a</sub>* and *r<sub>b</sub>* respectively. We write ***merge_table[l<sub>a</sub>] = r<sub>b</sub>.*** Thus, the representative of *l<sub>a</sub>* is *r<sub>b</sub>* now.It also works if we update *r<sub>a</sub>* to be *r<sub>b</sub>*.
 
 ## Reference
 
