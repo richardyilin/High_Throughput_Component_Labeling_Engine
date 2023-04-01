@@ -171,7 +171,7 @@ always@(*) begin
                     state_w = FIRST;
                     rom_a_w = 12;
                     if (a_r) begin
-                        conf_w =C B;
+                        conf_w =CB;
                     end
                     else begin
                         if (b_r) begin
